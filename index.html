@@ -370,3 +370,391 @@ document.querySelectorAll(".menu a").forEach(link => {
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Public Helpline & Support Center</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #073b73;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #0754a0, #087ec4);
+    color: white;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 45px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #073b73;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+    text-align: center;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background: #0875bd;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #064d85;
+}
+
+.red {
+    background: #d92525;
+}
+
+.red:hover {
+    background: #a91515;
+}
+
+.form-box {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.form-box label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: 600;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-box textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-box button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#message {
+    margin-top: 15px;
+    color: #087a39;
+    font-weight: 600;
+}
+
+.notice {
+    background: #fff4d8;
+    border-left: 5px solid #e8a000;
+    padding: 18px;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+footer {
+    background: #073b73;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 5px;
+}
+
+@media(max-width: 750px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🛡 HelpLine Center</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#helpline">Helplines</a>
+        <a href="#scam">Report Scam</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>How Can We Help You?</h1>
+    <p>Get emergency assistance, report cybercrime and find support.</p>
+    <a href="#helpline" class="btn">Find Helpline</a>
+    <a href="#scam" class="btn red">Report Scam</a>
+</section>
+
+<div class="container">
+
+<section class="section" id="helpline">
+    <h2>Emergency Helpline Numbers – India</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="icon">🚔</div>
+            <h3>Police Emergency</h3>
+            <p>Emergency police assistance.</p>
+            <a href="tel:112" class="btn red">Call 112</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚑</div>
+            <h3>Ambulance</h3>
+            <p>Medical emergency assistance.</p>
+            <a href="tel:108" class="btn red">Call 108</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚒</div>
+            <h3>Fire Emergency</h3>
+            <p>Fire and rescue assistance.</p>
+            <a href="tel:101" class="btn red">Call 101</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Cyber Crime</h3>
+            <p>Report online fraud and cybercrime.</p>
+            <a href="https://cybercrime.gov.in/"
+               target="_blank" rel="noopener" class="btn">Visit Website</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">💰</div>
+            <h3>Cyber Financial Fraud</h3>
+            <p>Report financial cyber fraud immediately.</p>
+            <a href="tel:1930" class="btn red">Call 1930</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">👩</div>
+            <h3>Women Helpline</h3>
+            <p>Women in distress can seek assistance.</p>
+            <a href="tel:181" class="btn">Call 181</a>
+        </div>
+
+    </div>
+
+    <div class="notice">
+        <strong>Important:</strong> For immediate emergencies in India,
+        call 112. For financial cyber fraud, call 1930 as soon as possible
+        and submit a complaint through the official cybercrime portal.
+    </div>
+</section>
+
+<section class="section" id="scam">
+    <h2>Report a Scam Phone Number</h2>
+
+    <div class="form-box">
+        <form id="scamForm">
+
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Suspicious Phone Number</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter phone number"
+                   pattern="[0-9+ -]{7,20}" required>
+
+            <label>Scam Category</label>
+            <select id="category" required>
+                <option value="">Select category</option>
+                <option>Banking Fraud</option>
+                <option>Fake Job Call</option>
+                <option>Lottery Scam</option>
+                <option>UPI Fraud</option>
+                <option>Fake Customer Care</option>
+                <option>Other</option>
+            </select>
+
+            <label>Describe the Incident</label>
+            <textarea id="details"
+                      placeholder="Describe what happened..."
+                      required></textarea>
+
+            <button type="submit" class="btn">Submit Report</button>
+
+            <div id="message"></div>
+        </form>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Need More Help?</h2>
+
+    <div class="card">
+        <div class="icon">📞</div>
+        <h3>Official Cybercrime Support</h3>
+        <p>
+            Use the official Indian Cyber Crime Reporting Portal
+            for submitting complaints and tracking reports.
+        </p>
+
+        <a href="https://cybercrime.gov.in/"
+           target="_blank" rel="noopener" class="btn">
+            Open Official Portal
+        </a>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>🛡 HelpLine Center</p>
+    <p>Public Information & Support Website</p>
+    <p>Independent demonstration website. Not an official government portal.</p>
+    <p>© 2026 HelpLine Center</p>
+</footer>
+
+<script>
+document.getElementById("scamForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const category = document.getElementById("category").value;
+    const details = document.getElementById("details").value.trim();
+
+    if (!name || !phone || !category || !details) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    document.getElementById("message").innerHTML =
+        "✓ Report form validated. This demo does not send or save your report. " +
+        "Please submit it through the official cybercrime portal.";
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>
+
